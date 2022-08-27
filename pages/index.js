@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { LandingPageLayout } from '../components/layouts/LandingPageLayout';
 
-import { outerContainer, catchPhrase, heroButton } from '../lib/framerMotion';
+import { catchPhrase, heroButton, navBarSection } from '../lib/framerMotion';
 // import { categories } from '../data/categories';
 
 export default function Home() {
@@ -24,8 +24,8 @@ export default function Home() {
       <motion.article
         initial="hidden"
         animate="visible"
-        variants={outerContainer}
-        viewport={{ once: true }}
+        variants={navBarSection}
+        // viewport={{ once: true }}
         className="container mx-auto flex flex-col gap-y-4 min-h-screen items-center md:mt-20 align-middle"
       >
         <motion.h1
